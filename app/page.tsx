@@ -60,7 +60,7 @@ export default function Home() {
     <>
       <div className={styles.imageContainer1} style={{ width: `${width[0]}%`, zIndex: zIndex[0] }}>
         <Image className={styles.salonImage1} style={{ zIndex: zIndex[0] }} src={salonBesoImage1}
-               alt={'サロンベソのイメージ画像1'}/>
+               alt={'サロンベソのイメージ画像1'} priority={true}/>
       </div>
       <div className={styles.imageContainer2} style={{ width: `${width[1]}%`, zIndex: zIndex[1] }}>
         <Image className={styles.salonImage2} style={{ zIndex: zIndex[1] }} src={salonBesoImage2}
@@ -74,7 +74,7 @@ export default function Home() {
         <Image className={styles.salonImage4} style={{ zIndex: zIndex[3] }} src={salonBesoImage4}
                alt={'サロンベソのイメージ画像4'}/>
       </div>
-      <Image className={styles.salonLogo} src={logo} alt="サロンベソのロゴ"/>
+      <Image className={styles.salonLogo} src={logo} alt="サロンベソのロゴ" priority={true}/>
     </>
   )
 }
