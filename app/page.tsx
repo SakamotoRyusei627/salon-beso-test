@@ -15,7 +15,7 @@ const setFluctuationWidth = 100 / (changeImageTime / interValTime)
 const zIndexSetting = [-1, -2, -3, -4]
 const elementWidthArr = [100, 100, 100, 100]
 const imageVolume = 4
-let setIntervalTime = interValTime
+let setIntervalTime = changeImageWaitTime
 
 export default function Home() {
   const [width, setWidth] = useState(elementWidthArr)
