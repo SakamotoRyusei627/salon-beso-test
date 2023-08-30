@@ -1,16 +1,21 @@
-"use client"
+'use client'
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import styles from 'app/page.module.scss'
+import logo from '../public/images/whiteSalonBesoLogo.png'
+import salonBesoImage1 from '../public/images/salonBesoImage1.jpg'
+import salonBesoImage2 from '../public/images/salonBesoImage2.jpg'
+import salonBesoImage3 from '../public/images/salonBesoImage3.jpg'
+import salonBesoImage4 from '../public/images/salonBesoImage4.jpg'
 
 const changeImageTime = 1000
 const changeImageWaitTime = 3000
 const interValTime = 10
 const setFluctuationWidth = 100 / (changeImageTime / interValTime)
-const zIndexSetting = [-1, -2]
-const elementWidthArr = [100, 100]
-const imageVolume = 2
-  let setIntervalTime = interValTime
+const zIndexSetting = [-1, -2, -3, -4]
+const elementWidthArr = [100, 100, 100, 100]
+const imageVolume = 4
+let setIntervalTime = interValTime
 
 export default function Home() {
   const [width, setWidth] = useState(elementWidthArr)
@@ -32,8 +37,8 @@ export default function Home() {
         }))
       } else {
         const newZIndex = [...zIndex]
-        const firstElement = newZIndex.shift()
-        newZIndex.push(firstElement!)
+        const firstElement = newZIndex.pop()
+        newZIndex.unshift(firstElement!)
         setZIndex(newZIndex)
 
         setWidth(elementWidthArr)
@@ -53,16 +58,23 @@ export default function Home() {
 
   return (
     <>
-      <div className={styles.imageContainer1} style={{ width: `${width[0]}%`,zIndex: zIndex[0]  }}>
-        <img className={styles.salonImage1} style={{ zIndex: zIndex[0] }} src={'/images/salonBesoImage1.jpg'}
-             alt={'サロンベソのイメージ画像1'}/>
+      <div className={styles.imageContainer1} style={{ width: `${width[0]}%`, zIndex: zIndex[0] }}>
+        <Image className={styles.salonImage1} style={{ zIndex: zIndex[0] }} src={salonBesoImage1}
+               alt={'サロンベソのイメージ画像1'}/>
       </div>
-      <div className={styles.imageContainer2} style={{ width: `${width[1]}%`,zIndex: zIndex[1]  }}>
-        <img className={styles.salonImage2} style={{ zIndex: zIndex[1] }} src={'/images/salonBesoImageTest2.jpg'}
-             alt={'サロンベソのイメージ画像2'}/>
+      <div className={styles.imageContainer2} style={{ width: `${width[1]}%`, zIndex: zIndex[1] }}>
+        <Image className={styles.salonImage2} style={{ zIndex: zIndex[1] }} src={salonBesoImage2}
+               alt={'サロンベソのイメージ画像2'}/>
       </div>
-      {/*<img className={styles.salonLogo} src={'/images/whiteSalonBesoLogo.png'} alt={'サロンベソのロゴ'}/>*/}
-      <Image className={styles.salonLogo} src="/images/whiteSalonBesoLogo.png" alt="サロンベソのロゴ" width={500} height={500}/>
+      <div className={styles.imageContainer3} style={{ width: `${width[2]}%`, zIndex: zIndex[2] }}>
+        <Image className={styles.salonImage3} style={{ zIndex: zIndex[2] }} src={salonBesoImage3}
+               alt={'サロンベソのイメージ画像3'}/>
+      </div>
+      <div className={styles.imageContainer4} style={{ width: `${width[3]}%`, zIndex: zIndex[3] }}>
+        <Image className={styles.salonImage4} style={{ zIndex: zIndex[3] }} src={salonBesoImage4}
+               alt={'サロンベソのイメージ画像4'}/>
+      </div>
+      <Image className={styles.salonLogo} src={logo} alt="サロンベソのロゴ"/>
     </>
   )
 }

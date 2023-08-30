@@ -1,17 +1,3 @@
-//.imageContainer {
-//  width: 100vw;
-//  height: 100vh;
-//}
-
-//.salonImage1 {
-//  width: 100vw;
-//  height: 100vh;
-//  object-fit: cover;
-//  position: absolute;
-//  z-index: -1;
-//}
-
-
 
 .salonImage1 {
   width: 100vw;
@@ -24,31 +10,14 @@
   z-index: -1;
 }
 
-.imageContainer1{
+.imageContainer1 {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  animation:animationSample 3.0s infinite;
-  animation-delay: 3s;
-  animation-timing-function: linear;
 }
-
-//@keyframes animationSample {
-//  0%  {
-//    width: 100%;
-//    //opacity: 1;
-//  }
-//  100%{
-//    width: 0%;
-//    //opacity: 0;
-//  }
-//}
-
-
-
 
 .salonImage2 {
   width: 100vw;
@@ -61,21 +30,59 @@
   z-index: -2;
 }
 
-.imageContainer2{
+.imageContainer2 {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  animation:animationSample 5.0s infinite;
-  animation-delay: 3s;
-  animation-timing-function: linear;
+}
+
+.salonImage3 {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+
+.imageContainer3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.salonImage4 {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -4;
+}
+
+.imageContainer4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 
 .salonLogo {
   width: 500px;
+  height: 500px;
   z-index: 0;
   position: absolute;
   top: calc((100vh - 500px) / 2);
