@@ -1,0 +1,35 @@
+@use "app/styleguide/variables.modules" as *;
+.navigationContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: serif;
+}
+
+.navigationContents {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navigationItem{
+  padding: 0 5px;
+  margin: 0 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  position: relative;
+  a{
+    font-size: 20px;
+    color: white;
+
+  }
+}
+.navigationItem a:hover{
+    color: black;
+}
+
+.selectedItem a{
+  color: black;
+}

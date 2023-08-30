@@ -1,0 +1,11 @@
+@mixin pc {
+  @container (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @container (max-width: 1199px) {
+    @content;
+  }
+}

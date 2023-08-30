@@ -1,0 +1,288 @@
+$color-100: #F4F9F9;
+$color-200: #CCF2F4;
+$color-300: #A4EBF3;
+$color-400: #AAAAAA;
+
+$characterColor-100: #ffffff;
+$characterColor-200: #a4a4a4;
+$characterColor-300: #525252;
+$characterColor-400: #000000;
+
+//
+//$sun-900: #d50000;
+//$sun-800: #eb0a1e;
+//$sun-700: #fa1606;
+//$sun-600: #ff220d;
+//$sun-500: #ff4b36;
+//$sun-400: #ff5838;
+//$sun-300: #ff7b5c;
+//$sun-200: #ffa28b;
+//$sun-100: #ffc8b8;
+//$sun-50: #ffe7e6;
+//$sun-primary: $sun-800;
+//
+//$sea-900: #0000be;
+//$sea-800: #0024ce;
+//$sea-700: #0031d8;
+//$sea-600: #003ee5;
+//$sea-500: #0946f1;
+//$sea-400: #4979f5;
+//$sea-300: #7096f8;
+//$sea-200: #9db7f9;
+//$sea-100: #c5d7fb;
+//$sea-50: #e8f1fe;
+//$sea-primary: $sea-600;
+//
+//$sumi-900: #1a1a1c;
+//$sumi-800: #414143;
+//$sumi-700: #626264;
+//$sumi-600: #757578;
+//$sumi-500: #949497;
+//$sumi-400: #b4b4b7;
+//$sumi-300: #d8d8db;
+//$sumi-200: #e8e8eb;
+//$sumi-100: #f1f1f4;
+//$sumi-50: #f8f8fb;
+//$sumi-primary: $sumi-900;
+//
+//$text-body: $sumi-900;
+//$text-description: $sumi-700;
+//$text-placeholder: $sumi-600;
+//$text-light: white;
+//$text-link: $sea-600;
+//$text-visited: $sea-900;
+//$text-alert: $sun-800;
+//$text-disabled: $sumi-500;
+//
+//$icon-label: $sumi-900;
+//$icon-active: $sea-600;
+//$icon-alert: $sun-800;
+//$icon-disabled: $sumi-500;
+//
+//$button-normal: $sea-600;
+//$button-hover: darken($button-normal, 0.1);
+//$button-active: darken($button-normal, 0.1);
+//$button-disable: $sumi-500;
+//
+//$background-primary: white;
+//$background-secondary: $sumi-100;
+//$background-tertiary: $sumi-50;
+//$background-quaternary: $sumi-900;
+//
+//$border-field: $sumi-900;
+//$border-divider: $sumi-300;
+//$border-selected: $sea-600;
+//$border-alert: $sun-800;
+//$border-disabled: $sumi-300;
+//
+//$status-success: #259d63;
+//$status-alert: $sun-800;
+//$status-warning: #d18d0f;
+//
+//$chart-primary: $sea-600;
+//$chart-secondary: $sea-400;
+//
+//$noto-sans-jp: Noto Sans JP, serif;
+//
+//@mixin large-text {
+//  font-family: $noto-sans-jp;
+//  font-size: 32px;
+//  line-height: 1;
+//  letter-spacing: 0.04em;
+//  color: $sumi-primary;
+//  font-weight: 700;
+//}
+//
+//@mixin h1 {
+//  font-family: $noto-sans-jp;
+//  font-size: 26px;
+//  line-height: 1;
+//  letter-spacing: 0.04em;
+//  color: $sumi-primary;
+//  font-weight: 700;
+//}
+//
+//@mixin h2 {
+//  font-family: $noto-sans-jp;
+//  font-size: 24px;
+//  line-height: 1;
+//  letter-spacing: 0.04em;
+//  color: $sumi-primary;
+//  font-weight: 700;
+//}
+//
+//@mixin h3 {
+//  font-family: $noto-sans-jp;
+//  font-size: 22px;
+//  line-height: 1;
+//  font-weight: 700;
+//  letter-spacing: 0.04em;
+//  color: $sumi-primary;
+//}
+//
+//@mixin h4 {
+//  font-family: $noto-sans-jp;
+//  font-size: 20px;
+//  line-height: 1;
+//  font-weight: 700;
+//  letter-spacing: 0.04em;
+//  color: $sumi-primary;
+//}
+//
+//@mixin h5 {
+//  font-family: $noto-sans-jp;
+//  font-size: 18px;
+//  line-height: 1;
+//  letter-spacing: 0.04em;
+//  font-weight: 700;
+//  color: $sumi-primary;
+//}
+//
+//@mixin h6 {
+//  font-family: $noto-sans-jp;
+//  font-size: 16px;
+//  line-height: 1;
+//  letter-spacing: 0.04em;
+//  color: $sumi-primary;
+//  font-weight: 400;
+//}
+//
+//@mixin button {
+//  font-family: $noto-sans-jp;
+//  font-size: 14px;
+//  line-height: 1.5;
+//  letter-spacing: 0.04em;
+//  font-weight: 700;
+//}
+//
+//@mixin subtitle {
+//  font-family: $noto-sans-jp;
+//  font-size: 16px;
+//  line-height: 1.5;
+//  letter-spacing: 0.04em;
+//  font-weight: 400;
+//}
+//
+//@mixin subtitle2 {
+//  font-family: $noto-sans-jp;
+//  font-size: 14px;
+//  line-height: 1.5;
+//  letter-spacing: 0.04em;
+//  font-weight: 500;
+//}
+//
+//@mixin body1 {
+//  font-family: $noto-sans-jp;
+//  font-size: 16px;
+//  color: $sumi-900;
+//}
+//
+//@mixin body1-regular {
+//  @include body1;
+//  font-weight: 400;
+//  line-height: 1.75;
+//  letter-spacing: 0.005em;
+//}
+//
+//@mixin body1_2-regular {
+//  @include body1;
+//  font-weight: 400;
+//  line-height: 1;
+//  letter-spacing: 0;
+//}
+//
+//@mixin body1-bold {
+//  @include body1;
+//  font-weight: 700;
+//  line-height: 1.75;
+//  letter-spacing: 0.005em;
+//}
+//
+//@mixin body1_2-bold {
+//  @include body1;
+//  font-weight: 700;
+//  line-height: 1;
+//  letter-spacing: 0;
+//}
+//
+//@mixin body2 {
+//  font-family: $noto-sans-jp;
+//  font-size: 14px;
+//  color: $sumi-900;
+//}
+//
+//@mixin body2-regular {
+//  @include body2;
+//  line-height: 1.75;
+//  letter-spacing: 0.0025em;
+//  font-weight: 400;
+//}
+//
+//@mixin body2_2-regular {
+//  @include body2;
+//  line-height: 1;
+//  letter-spacing: 0;
+//  font-weight: 400;
+//}
+//
+//@mixin body2-bold {
+//  @include body2;
+//  line-height: 1.75;
+//  letter-spacing: 0.0025em;
+//  font-weight: 700;
+//}
+//
+//@mixin body2_2-bold {
+//  @include body2;
+//  line-height: 1;
+//  letter-spacing: 0;
+//  font-weight: 700;
+//}
+//
+//@mixin caption {
+//  font-family: $noto-sans-jp;
+//  font-size: 12px;
+//  line-height: 1.75;
+//  letter-spacing: 0.0125em;
+//  font-weight: 400;
+//}
+//
+//@mixin caption_2-regular {
+//  font-family: $noto-sans-jp;
+//  font-size: 12px;
+//  line-height: 1;
+//  letter-spacing: 0;
+//  font-weight: 400;
+//}
+//
+//@mixin caption_2-bold {
+//  font-family: $noto-sans-jp;
+//  font-size: 12px;
+//  line-height: 1;
+//  letter-spacing: 0;
+//  font-weight: 700;
+//}
+//
+//@mixin overline {
+//  font-family: $noto-sans-jp;
+//  font-size: 10px;
+//  line-height: 1.75;
+//  letter-spacing: 0.015em;
+//  font-weight: 400;
+//}
+//
+//@mixin overline_2-regular {
+//  font-family: $noto-sans-jp;
+//  font-size: 10px;
+//  line-height: 1;
+//  letter-spacing: 0;
+//  font-weight: 400;
+//}
+//
+//@mixin overline_2-bold {
+//  font-family: $noto-sans-jp;
+//  font-size: 10px;
+//  line-height: 1;
+//  letter-spacing: 0;
+//  font-weight: 700;
+//}

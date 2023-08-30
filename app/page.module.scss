@@ -1,0 +1,83 @@
+//.imageContainer {
+//  width: 100vw;
+//  height: 100vh;
+//}
+
+//.salonImage1 {
+//  width: 100vw;
+//  height: 100vh;
+//  object-fit: cover;
+//  position: absolute;
+//  z-index: -1;
+//}
+
+
+
+.salonImage1 {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.imageContainer1{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  animation:animationSample 3.0s infinite;
+  animation-delay: 3s;
+  animation-timing-function: linear;
+}
+
+//@keyframes animationSample {
+//  0%  {
+//    width: 100%;
+//    //opacity: 1;
+//  }
+//  100%{
+//    width: 0%;
+//    //opacity: 0;
+//  }
+//}
+
+
+
+
+.salonImage2 {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.imageContainer2{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  animation:animationSample 5.0s infinite;
+  animation-delay: 3s;
+  animation-timing-function: linear;
+}
+
+
+.salonLogo {
+  width: 500px;
+  z-index: 0;
+  position: absolute;
+  top: calc((100vh - 500px) / 2);
+  left: calc((100vw - 500px) / 2);
+}
