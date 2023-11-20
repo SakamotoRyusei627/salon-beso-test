@@ -1,21 +1,24 @@
-import React from "react";
-import Link from "next/link";
-import styles from "./NavigationLink.module.scss"
+import React from 'react'
+import Link from 'next/link'
+import styles from './NavigationLink.module.scss'
 
 type Props = {
-  className: string;
+  style: string;
   linkPath: string;
   children: React.ReactNode;
+  clickHandler?: () => void
 };
 
-function NavigationLink({ className, linkPath, children }: Props) {
+function NavigationLink({ style, linkPath, children, clickHandler }: Props) {
   return (
-    <li className={className}>
+    <li className={style} onClick={() => {
+      if (clickHandler) clickHandler()
+    }}>
       <Link href={linkPath} legacyBehavior>
         <a className={styles.naviText}>{children}</a>
       </Link>
     </li>
-  );
+  )
 }
 
-export default NavigationLink;
+export default NavigationLink

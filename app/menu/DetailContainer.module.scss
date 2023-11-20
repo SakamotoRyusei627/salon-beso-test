@@ -1,0 +1,40 @@
+.detailContainer{
+  position: relative;
+  border-color: red;
+  border-style: solid;
+  margin-top: 91px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  //width: calc(100% - (280px - 33px));
+  padding: 10px 20px 30px 30px;
+  width: 70vw;
+  min-width: 50vw;
+}
+.menuTitle{
+  font-size: 40px;
+  z-index: 0;
+}
+.detailTextContainer{
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  gap: 50px;
+}
+.icon1{
+  z-index: -1;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+}
+.icon2{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  z-index: -1;
+  bottom: -30px;
+  right: -30px;
+  float: right;
+  rotate: 180deg;
+}

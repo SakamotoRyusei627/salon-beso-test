@@ -12,7 +12,7 @@ const changeImageTime = 1000
 const changeImageWaitTime = 3000
 const interValTime = 10
 const setFluctuationWidth = 100 / (changeImageTime / interValTime)
-const zIndexSetting = [-1, -2, -3, -4]
+const zIndexSetting = [-2, -3, -4, -5]
 const elementWidthArr = [100, 100, 100, 100]
 const imageVolume = 4
 let setIntervalTime = changeImageWaitTime
@@ -22,10 +22,8 @@ export default function Home() {
   const [zIndex, setZIndex] = useState(zIndexSetting)
   const [activeIndex, setActiveIndex] = useState(0)
 
-
   useEffect(() => {
     const setIntervalFunc = () => {
-      console.log(width)
       setIntervalTime = interValTime
       if (width[activeIndex] > 0) {
         setWidth(prevArray => prevArray.map((elem, i) => {
@@ -60,21 +58,21 @@ export default function Home() {
     <>
       <div className={styles.imageContainer1} style={{ width: `${width[0]}%`, zIndex: zIndex[0] }}>
         <Image className={styles.salonImage1} style={{ zIndex: zIndex[0] }} src={salonBesoImage1}
-               alt={'サロンベソのイメージ画像1'} priority={true}/>
+               alt={'サロンベソのイメージ画像1'} priority={true} />
       </div>
       <div className={styles.imageContainer2} style={{ width: `${width[1]}%`, zIndex: zIndex[1] }}>
         <Image className={styles.salonImage2} style={{ zIndex: zIndex[1] }} src={salonBesoImage2}
-               alt={'サロンベソのイメージ画像2'}/>
+               alt={'サロンベソのイメージ画像2'} priority={false}/>
       </div>
       <div className={styles.imageContainer3} style={{ width: `${width[2]}%`, zIndex: zIndex[2] }}>
         <Image className={styles.salonImage3} style={{ zIndex: zIndex[2] }} src={salonBesoImage3}
-               alt={'サロンベソのイメージ画像3'}/>
+               alt={'サロンベソのイメージ画像3'} priority={false}/>
       </div>
       <div className={styles.imageContainer4} style={{ width: `${width[3]}%`, zIndex: zIndex[3] }}>
         <Image className={styles.salonImage4} style={{ zIndex: zIndex[3] }} src={salonBesoImage4}
-               alt={'サロンベソのイメージ画像4'}/>
+               alt={'サロンベソのイメージ画像4'} priority={false}/>
       </div>
-      <Image className={styles.salonLogo} src={logo} alt="サロンベソのロゴ" priority={true}/>
+      <Image className={`${styles.salonLogo} ${styles.mobileSalonLogo}`} src={logo} alt="サロンベソのロゴ" priority={true}/>
     </>
   )
 }

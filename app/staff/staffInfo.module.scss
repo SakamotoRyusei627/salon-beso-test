@@ -1,0 +1,41 @@
+.detailContainer {
+  width: 80vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: #0000001c;
+  border-radius: 20px;
+}
+
+
+.imageContainer{
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.imageItem1{
+  position: absolute;
+  top: 2vh;
+  left: 2vw;
+  z-index: 1;
+}
+
+.imageItem2{
+  position: absolute;
+  bottom: 2vh;
+  right: 2vw;
+}
+
+.figure {
+  position: relative;
+  width: 20vw;
+  height: 35vh;
+  border-radius: 4px;
+}
+
+.PRContainer{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}

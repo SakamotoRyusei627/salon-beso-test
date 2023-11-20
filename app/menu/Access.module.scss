@@ -1,0 +1,41 @@
+.accessContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  hr{
+    border: solid 1px;
+  }
+}
+.AccessContents{
+  display: flex;
+  flex-direction: row;
+}
+.leftPosition{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+.contentTitle{
+ display: flex;
+  width: 100px;
+}
+.textContent{
+  margin-left: 100px;
+
+}
+.textContent2{
+  margin-left: 170px;
+}
+
+.mapDiv{
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.map {
+  border: 0;
+  width: 100%;
+  height: 450px;
+  margin-top: -80px;
+}

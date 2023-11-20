@@ -1,0 +1,59 @@
+@use 'app/styleguide/MediaQueries.modules' as *;
+
+
+.staffPageContainer {
+  width: 100%;
+  padding-top: 50px;
+  height: 80vh;
+}
+
+.salonDeBellezaText{
+  text-align: center;
+  font-size: 35px;
+  color: #4a3a34d4;
+}
+
+.besoText{
+  text-align: center;
+  font-size: 60px;
+  color: #4a3a34;
+}
+
+.PCDetailMenuContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3vw;
+  height: 70vh;
+  @include sp{
+    display: none;
+  }
+}
+
+.sideMenu{
+  list-style: none;
+  font-size: 20px;
+  line-height: 45px;
+}
+
+.listItem{
+ margin-bottom: 5px;
+}
+
+.listItem:hover{
+  background: rgba(0, 0, 0, 0.1098039216);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.select{
+  background: rgba(0, 0, 0, 0.1098039216);
+  border-radius: 15px;
+}
+
+.SPDetailMenuContainer{
+  @include pc{
+    display: none;
+  }
+}

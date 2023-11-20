@@ -1,35 +1,162 @@
 @use "app/styleguide/variables.modules" as *;
-.navigationContainer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  font-family: serif;
-}
+@use 'app/styleguide/MediaQueries.modules' as *;
 
-.navigationContents {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
+@include pc {
+  .hamburger,
+  .mobileMainContainer {
+    display: none;
+  }
 
-.navigationItem{
-  padding: 0 5px;
-  margin: 0 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  position: relative;
-  a{
-    font-size: 20px;
+  .navigationContainer {
+    background: #00000078;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mainContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .navigationContents {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .pageTitle {
+    font-size: 30px;
+    margin-left: 1vw;
     color: white;
+  }
 
+  .navigationItem {
+    padding: 0 5px;
+    margin: 0 30px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+
+    a {
+      font-size: 20px;
+      color: white;
+    }
+  }
+  .navigationItem a:hover {
+    color: black;
+  }
+
+  .selectedItem a {
+    color: black;
   }
 }
-.navigationItem a:hover{
-    color: black;
-}
 
-.selectedItem a{
-  color: black;
+
+@include sp{
+  .pcNavigation {
+    display: none !important;
+  }
+  .pageTitle {
+    font-size: 30px;
+    margin-left: 4vw;
+    color: white;
+  }
+
+  .hamburger {
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    margin: 0 0 0 auto;
+    height: 50px;
+    width: 50px;;
+    border-radius: 5px;
+  }
+
+  .hamburgerIcon span {
+    position: absolute;
+    z-index: 10;
+    left: 15px;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 8px;
+    transition: ease 0.75s;
+  }
+
+  .hamburgerIcon span:nth-of-type(1) {
+    top: 15px;
+  }
+  .hamburgerIcon span:nth-of-type(2) {
+    top: 23px;
+  }
+  .hamburgerIcon span:nth-of-type(3) {
+    top: 31px;
+  }
+
+  .hamburgerIcon.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 45%;
+  }
+
+  .hamburgerIcon.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .hamburgerIcon.active span:nth-of-type(3) {
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 45%;
+  }
+
+
+  .navigationContainer {
+    background: #00000078;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mobileMainContainer {
+    margin-left: 5vw;
+    width: 50vw;
+  }
+  .mobileNaviArea {
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    background: none;
+    transition: all ease 0.75s;
+
+
+  }
+  .mobileNaviArea.active {
+    visibility: visible;
+    opacity: 1;
+    background: #00000078;
+    transition: all ease 0.75s;
+  }
+
+
+  .mobileNavigationContents {
+    list-style-type: none;
+  }
+
+  .mobileNavigationItem {
+    height: 55px;
+    line-height: 55px;
+    width: fit-content;
+
+    a {
+      font-size: 15px;
+      color: white;
+    }
+  }
 }

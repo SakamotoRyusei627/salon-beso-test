@@ -1,0 +1,18 @@
+.menuPageContainer{
+  margin-top: 50px;
+}
+.detailMenuContainer{
+  display: flex;
+  flex-direction: row;
+  height: 50vh;
+}
+.sideMenu{
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 128px;
+  margin-left: 27px;
+  list-style: none;
+  li{
+    cursor: pointer;
+  }
+}
